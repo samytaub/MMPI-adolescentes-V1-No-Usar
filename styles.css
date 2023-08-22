@@ -1,0 +1,312 @@
+ /* variables de Colores */
+ * {
+    --fondocontestada : rgb(224,250,244);
+    --bodyBackground :  rgb(234, 233, 233)  ;
+    --bodyBackgroundOscuro :  rgb(225, 218, 218)  ;
+    --botones:rgb(223, 218, 225);
+    --fondoTabla: rgb(228, 235, 234)  ; 
+    --letrasOscuras: rgb(71, 71, 71);
+    --letrasMuyOscuras: rgb(12, 11, 11);
+    --sombras: rgb(166, 156, 195);
+    --fondotitulos:  rgb(147, 206, 255);
+
+    margin: 0;
+    padding:0;
+ }
+
+
+    body {
+      font-family: "Montserrat", sans-serif;
+      text-align: center;
+      background:var(--bodyBackground);  
+      font-size: 12px;
+
+    }
+  
+    
+    h1,h2 {
+      font-size: 24px;;
+      margin: 0px;
+      color: var(--letrasOscuras);
+      
+    }
+
+    .preguntascontainer{
+      margin-top: 120px;
+    }
+    
+    .quiz-form{
+      transition: transform 2s ease-out;
+    }
+
+
+    /* Del Template de preguntas  */
+    .pregunta { 
+      display: flex;
+      flex-direction: column;
+      align-content: center;  
+      justify-content: center;
+      text-align: center;
+      /* margin-bottom: 10px; */
+      width: 60%;
+      border: 1px solid gray;
+      border-radius: 10px;
+      padding: 15px;
+      display: block;
+      margin: 5px auto;
+      background-color: whitesmoke;
+      color: rgb(32, 32, 32);
+      font-size: 20px;
+    }
+    
+    .pregunta p {
+      padding-top: 0px;
+      font-size: 16px;
+      font-weight: bold;
+      margin: 0  10px 0px;
+      text-align: left;
+      
+    }
+    
+    .opcionesderespuesta label {
+    margin-left:20px;  
+    font-size: 14px;
+    }
+    
+    .opcionesderespuesta input {
+    margin-right:20px;
+ 
+    }
+    
+    
+    
+    input[type="submit"] {
+      padding: 10px 10px;
+      margin-top: 10px;
+      background-color: var(--botones);
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      border: 1px solid darkgray;
+    }
+
+    /* cuadro de controles */
+    
+    .controles{
+       position: fixed;
+      top:10px;
+      right:1.5%;  
+      width: 120px;
+      /* height: 200px; */
+      background-color:rgb(234, 233, 233);
+      border: 1px solid darkgray;
+      border-radius: 10px;
+      padding:10px;
+      z-index: 100;
+  
+  }
+  .controles .botoncontestadas{
+   margin-bottom:5px ;
+   
+  }
+
+  .controles .totalconstestadas{
+    margin-top: 25px;
+    font-size: 6px;
+  }
+  .controles .botonresultados{
+   margin:20px 0 0 0;
+  }
+  
+  .boton{
+  background-color: var(--botones);
+  border-radius: 5px;
+  border-color: var(--botones);
+  padding: 5px;  
+}
+
+
+/* Tabla */
+
+
+
+.titulotabla{
+  background-color: var(--fondotitulos)  ;
+  color: var(--letrasOscuras);
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  border-radius: 15px ;
+  border: 0.5px solid darkgrey;
+   }    
+
+ .encabezado{
+  background-color: var(--fondotitulos)   ;
+  color: var(--letrasMuyOscuras);
+  font-weight: 400;
+  font-size: 16px;
+  height: 40px;
+   }
+
+ .valoresprincipales{
+  color: var(--letrasMuyOscuras);
+  background-color: #c7e2f6 ;
+  font-weight: 700;
+  font-size: 16px;
+  height: 50px;;
+   }
+
+  .valoresecundarios{
+    color: grey darken-2;
+    /* background-color: #c7e2f6 ; */
+    font-weight: 500;
+    font-size: 14px;
+    height: 30px;
+     }
+
+ .etiquetas{
+  color: var(--letrasOscuras);
+  font-weight: 400;
+  font-size: 13px;
+   }
+
+   .tablascontainer { 
+      margin: 0px 2%;
+      /* width : 90%; */
+      background-color: var(--bodyBackgroundOscuro);
+      padding: 10px 2px;
+      height:200px;
+      border-radius: 15px;
+      transition: transform 2s ease-out;
+      /* transform: translateX(-1500px); */
+      position: fixed;
+      top: 150px;
+      left: 5px;
+      z-index: 1000;
+      transition: transform 2s ease-out;
+      transform: translateX(-2500px);
+      border: solid 2px lightgrey;
+      box-shadow: 4px 4px 12px  var(--sombras);
+      
+  }
+
+
+  .tablaresultados{
+  margin: 10px auto 10px auto;
+  width: 99%;
+  table-layout: fixed;
+  /* height: 300px; */
+  background-color: var(--fondoTabla);
+  
+  }
+
+/* //  Cuandro de datos personales */
+
+
+  .datospersonales{
+    position: fixed;
+    top:5px;
+    left:1%;  
+    background-color:rgb(234, 233, 233);
+    border: 1px solid darkgray;
+    border-radius: 10px;
+    padding:5px  10px;
+    z-index: 2;
+  }
+
+  .datospersonales p{
+    text-align: left;
+    margin:2px;
+    color: var(--letrasOscuras);
+    font-weight: bold;
+    font-size: 14px;}
+
+  .datospersonales input {
+    padding: 10px;
+    color: var(--letrasOscuras);
+    border-radius: 5px;
+    border: solid 2px lightgrey;
+    text-decoration: none;
+    display: block;
+  
+  };
+
+
+
+/* Subescalas */
+
+.cuadrosubescalas{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+  align-content: center;
+  margin-top: 10px;
+
+}
+
+.subescala{
+  
+  margin: 1PX;
+  width: 200px;
+  height: 180PX;
+  background-color: var(--fondoTabla);
+  border-radius: 0px 0px 15px 15px ;
+  border: 0.5px solid darkgrey;
+}
+
+.subescala .tituloesc{
+  width: 99%;
+  height: 20px;
+  margin: 0 auto;
+  background-color: var(--fondotitulos) ;
+  color: var(--letrasMuyOscuras);
+  font-size: 12px;
+  font-weight: bold;
+  /* border-radius: 15px 15px 0 0; */
+  border: 0.5px solid darkgrey;
+  padding-top: 2px;
+}
+
+.renglon{
+display: flex;
+flex-direction: column;
+padding: 0 5px;
+/* justify-content: flex-start; */
+/* align-items: left; */
+}
+
+.variablesrenglon{
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 0 0 0;
+  color: var(--letrasMuyOscuras);
+  font-weight: bold;
+  font-size: 12px;
+  padding:4.5px 10px ;
+  text-align: left;  
+}
+
+.subescalasc .variablesrenglon{
+  padding: 4px;
+}
+
+
+fieldset{
+display: flex;
+justify-content: space-around;
+/* width:  100%; */
+margin: 20px 0%;
+padding: 10px 10px;
+border-radius: 15px;
+border: solid 2px lightgrey;background-color: var(--bodyBackgroundOscuro);
+box-shadow: 4px 4px 12px var(--sombras);
+
+}
+
+legend{
+text-align: left;
+margin-left: 30px;
+color: var(--letrasOscuras);
+font-size: 14px;
+font-weight: bold;
+}

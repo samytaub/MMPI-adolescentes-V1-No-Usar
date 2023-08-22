@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Cuestionario de verdadero o falso</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+  </head>
+
+
+<style>
+</style>
+
+<body>
+<!-- Muestra resultados -->
+<section >
+  
+  <div id="screen"  class="tablascontainer">
+
+
+  <div class="titulotabla">Tabla de Resultados MMPI-II Adolescentes</div>
+  <table id=mmpiTabla class="tablaresultados"  >
+    <thead>
+      <tr  class="encabezado">
+          <th> </th>
+          <th>L</th>
+          <th>F</th>
+          <th>K</th>
+          <th>Hs(1)</th>
+          <th>D</th>
+          <th>Hy(3)</th>
+          <th>Pd(4)</th>
+          <th>Mf-M(5)</th>
+          <th>Mf-F(5)</th>
+          <th>Pa(6)</th>
+          <th>Pt(7)</th>
+          <th>Sc(8)</th>
+          <th>Ma(9)</th>
+          <th>SI(0)</th>
+      </tr>
+    </thead>
+  
+    <tbody>
+      <tr    class="valoresprincipales">
+        <td>Totales</td>
+        <td id ="L">  </td>
+        <td id ="F">  </td>
+        <td id ="K">  </td>
+        <td id ="THs"> </td>
+        <td id ="D">   </td>
+        <td id ="Hy">  </td>
+        <td id ="TPd">  </td>
+        <td id ="MfM"> </td>
+        <td id ="MfF">  </td>
+        <td id ="Pa">   </td>
+        <td id ="TPt">  </td>
+        <td id ="TSc">  </td>
+        <td id ="TMa">  </td>
+        <td id ="Si">   </td>         
+      </tr>
+    </tbody>
+    <tbody>
+      <tr class= "valoresecundarios" >
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td id ="Hs">  </td>
+        <td> </td>
+        <td> </td>            
+        <td id ="Pd">  </td>
+        <td> </td> 
+        <td> </td> 
+        <td> </td> 
+        <td id ="Pt">  </td>
+        <td id ="Sc">  </td>
+        <td id ="Ma">  </td>
+        
+       </tr>
+    </tbody>
+    <tbody>
+        <tr class= "valoresecundarios">
+        <td class="etiquetas"></td>
+        <td> </td>
+        <td> </td>
+        <td> </td>
+        <td id ="KHs">  </td>
+        <td> </td>
+        <td> </td>            
+        <td id ="KPd"> </td>
+        <td> </td> 
+        <td> </td> 
+        <td> </td> 
+        <td id ="KPt"> </td>
+        <td id ="KSc"> </td>
+        <td id ="KMa"> </td>
+       </tr>
+    </tbody>
+  </table>
+
+
+  <div class="cuadrosubescalas">
+    <fieldset>
+      <legend>Sub-escalas de Harris-Lingoes</legend>
+
+      <div class="subescala">
+        <p class="tituloesc">Esc 2- Depresión</p>
+        <div class="renglon">
+              <div class="variablesrenglon ">
+                    <div>D1-Depresión subjetiva:</div>
+                    <div id="D1">-</div>
+              </div>
+              <div class="variablesrenglon ">
+                    <div>D2-Retardo psicomotor:</div>
+                    <div id="D2">-</div>
+              </div>
+              <div class="variablesrenglon ">
+                    <div>D3-Malfunc. físico:</div>
+                    <div  id="D3">-</div>
+              </div>
+              <div class="variablesrenglon ">
+                    <div>D4-Embotamiento mental:</div>
+                    <div  id="D4">-</div>
+              </div>  
+              <div class="variablesrenglon ">
+                    <div>D5-Preocupación:</div>
+                    <div  id="D5">-</div>
+               </div>
+        </div>
+
+      </div>
+      <div class="subescala">
+        <p  class="tituloesc">Esc 3- Histeria</p>
+        <div class="renglon">
+          <div class="variablesrenglon ">
+                <div>Hy1-Negación de ansiedad social:</div>
+                <div id="HY1">-</div>
+          </div>
+          <div class="variablesrenglon ">
+                <div>Hy2-Necesidad de afecto:</div>
+                <div id="HY2">-</div>
+          </div>
+          <div class="variablesrenglon ">
+                <div>Hy3-Cansancio:</div>
+                <div  id="HY3">-</div>
+          </div>
+          <div class="variablesrenglon ">
+                <div>Hy4-Quejas somáticas:</div>
+                <div  id="HY4">-</div>
+          </div>  
+          <div class="variablesrenglon ">
+                <div>Hy5-Inhibición agresión:</div>
+                <div  id="HY5">-</div>
+           </div>
+    </div>
+
+
+      </div>
+      <div class="subescala">
+        <p  class="tituloesc">Esc 4- Desv Psicopática</p>
+        <div class="variablesrenglon ">
+          <div>Pd1-Problemas familares:</div>
+          <div id="PD1">-</div>
+        </div>
+        <div class="variablesrenglon ">
+              <div>Pd2-Problemas con la autoridad:</div>
+              <div id="PD2">-</div>
+        </div>
+        <div class="variablesrenglon ">
+              <div>Pd3-Inperturbabilidad social:</div>
+              <div  id="PD3">-</div>
+        </div>
+        <div class="variablesrenglon ">
+              <div>Pd4-Alienación social:</div>
+              <div  id="PD4">-</div>
+        </div>  
+        <div class="variablesrenglon ">
+              <div>Pd5-Auto alienación:</div>
+              <div  id="PD5">-</div>
+        </div>
+
+
+      </div>
+      <div class="subescala">
+        <p  class="tituloesc">Esc 6- Paranoia</p>
+        <div class="variablesrenglon ">
+            <div>Pa1-Ideas persecutorias:</div>
+            <div id="PA1">-</div>
+          </div>
+          <div class="variablesrenglon ">
+                <div>Pa2-Asertividad:</div>
+                <div id="PA2">-</div>
+          </div>
+          <div class="variablesrenglon ">
+                <div>Pa3-Ingenuidad:</div>
+                <div  id="PA3">-</div>
+          </div>
+
+      </div>
+
+      <div class="subescala  subescalasc">
+        <p  class="tituloesc">Esc 8- Esquisofrenia</p>
+        <div class="variablesrenglon ">
+          <div>Sc1-Alienación social:</div>
+          <div id="SC1">-</div>
+        </div>
+        <div class="variablesrenglon ">
+              <div>Sc2-Alienación emocional:</div>
+              <div id="SC2">-</div>
+        </div>
+        <div class="variablesrenglon ">
+              <div>Sc3:Falta control congnitivo:</div>
+              <div  id="SC3">-</div>
+        </div>
+        <div class="variablesrenglon ">
+              <div>Sc4-Falta control connativo:</div>
+              <div  id="SC4">-</div>
+        </div>  
+        <div class="variablesrenglon ">
+              <div>Sc5-Inhibición del afecto:</div>
+              <div  id="SC5">-</div>
+        </div>
+        <div class="variablesrenglon ">
+          <div>Sc6-Alucinaciones:</div>
+          <div  id="SC6">-</div>
+    </div>
+
+      </div>
+
+      <div class="subescala">
+        <p  class="tituloesc">Esc 9- Hipomanía</p>
+        <div class="variablesrenglon ">
+          <div>Ma1-Amoralidad:</div>
+          <div id="MA1">-</div>
+        </div>
+        <div class="variablesrenglon ">
+              <div>Ma2-Aceleración psicomotora:</div>
+              <div id="MA2">-</div>
+        </div>
+        <div class="variablesrenglon ">
+              <div>Ma3-Imperturbabilidad:</div>
+              <div  id="MA3">-</div>
+        </div>
+        <div class="variablesrenglon ">
+              <div>Ma4-Sobrevaloración del Yo:</div>
+              <div  id="MA4">-</div>
+        </div>  
+
+      </div>
+
+  </div>
+  
+  </div>
+
+  </section>
+
+
+  <!-- // Caja de Controles - es fixed arriba a la derecha -->
+
+<section>
+  <div class="controles">
+    <button class="boton botoncontestadas"  onclick="revisaFormulariodeRespuestas()" >#Contestadas</button>
+    <p class="totalcontestadaslabel">Total Contestadas: </p>
+    <p class="totalcontestadas"><span>-</span></p>
+    <button class="boton botonresultados" onclick="mostrarResultados()">Resultados</button>
+  </div>  
+</section>
+
+
+<!-- Datos personales -->
+<section>
+  <div class="datospersonales">
+    <p>Fecha</p>
+    <input type="date" id="fecha" name="fecha" class="datospersonales-fecha" placeholder="dd-mm-yyyy" min="23-02-2023" disabled >
+    <p>Nombre y Apellido</p>
+    <input  type="text" id="nombreapellido"  name="nombreapellido" class="nombre" placeholder="Ingrese su nombre y apellido" >
+    <p id="mensaje" class="mensaje" style="color:rgb(240, 101, 101)"></p>
+  </div>
+</section>
+
+
+
+<!-- // Muestra el Cuestionario -->
+
+<section class="preguntascontainer">
+  <h2>MMPI-II ADOLESCENTES</h2>
+  <h1>Cuestionario</h1>
+  <form   class="quiz-form"    id="quiz-form">
+
+      <div class="preguntas">
+        <!-- Aqui van las preguntas -->
+        <!-- Aqui van las preguntas -->
+        <!-- Aqui van las preguntas -->
+      </div>
+  </form> 
+
+</section>
+
+
+<!-- Fin de Muestra resultados -->
+
+
+
+
+<!-- Template de la preguntas -->
+<template id="templatepregunta">
+<div class="pregunta">
+    <p id="textoPregunta">Pregunta 2</p>
+    <div class="opcionesderespuesta">
+        <label  id="q2-yes" for="q2-yes">Verdadero</label>
+        <input id="radio1"  type="radio"  name="q2" value="v">
+        <label   for="q2-no">Falso</label>
+        <input id="radio2"  type="radio"  name="q2" value="f">
+    </div>
+</div>
+</template>
+
+<!-- fin del HTML   -->
+
+
+<script src="./respuestasfake.js"></script>
+
+<script src="./listapreguntas.js"></script>
+<script src="./plantillas.js"></script>
+<script src="./codigo.js"></script>
+
+
+
+</body>
+</html>
